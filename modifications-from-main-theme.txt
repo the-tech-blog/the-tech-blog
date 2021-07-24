@@ -7,3 +7,50 @@
 {{- end }}
 4. static folder which is at top level
 5.
+
+
+
+
+
+
+the news sense.in modifications
+
+
+Theme footer .php
+
+
+			<div class="footer-socket-left-section">
+					<div class="copyright">
+						Copyright © 2020 <a href="http://thenewssense.in/" title="The News Sense"><span>The News Sense</span></a> 
+						&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.  &nbsp;&nbsp;&nbsp;&nbsp;
+						Made with <span style="color: #e25555;">&hearts;</span> in India 
+					</div>
+				</div>
+
+
+
+
+(inc/template-tags.php) --- for page view count
+ 
+
+function colormag_entry_meta() {
+		if ( 'post' == get_post_type() ) :
+			echo '<div class="below-entry-meta">';
+			?>
+			<i class="fa fa-eye" style="font-size:15px;color:#B61F1E"></i>
+			<span style="font-size: 13px;padding-right: 10px;"> &nbsp;<?php echo(rand(100,1000)); ?> Views </span>
+
+
+
+additonal css
+
+
+
+
+#site-navigation {
+    background-color: #b61e1e;
+}
+.comment-form-url{
+	display:none;
+}
+
